@@ -6,10 +6,10 @@ AI-first project auditor and re-engineer based on the 9 design principles and 7 
 
 ```bash
 # Add the TechWolf marketplace (once)
-/plugin marketplace add techwolf-ai/ai-first-toolkit
+claude plugin marketplace add techwolf-ai/ai-first-toolkit
 
 # Install the plugin
-/plugin install ai-firstify@techwolf-ai-first
+claude plugin install ai-firstify@techwolf-ai-first
 ```
 
 ## Usage

@@ -27,9 +27,9 @@ A complete content studio for managing thought leadership content (LinkedIn post
 
 Add the marketplace and install:
 
-```
-/plugin marketplace add techwolf/ai-first-open-source
-/plugin install content-studio@techwolf-ai-first
+```bash
+claude plugin marketplace add techwolf-ai/ai-first-toolkit
+claude plugin install content-studio@techwolf-ai-first
 ```
 
 ### 2. Set Up for a Person
