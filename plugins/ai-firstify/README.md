@@ -1,6 +1,6 @@
 # ai-firstify
 
-AI-first project auditor and re-engineer based on the 9 design principles and 7 design patterns from the [TechWolf AI-First Bootcamp](https://ai-first.techwolf.ai).
+Audit, re-engineer, or bootstrap projects to align with AI-first design principles. Based on the 9 design principles and 7 design patterns from the [TechWolf AI-First Bootcamp](https://ai-first.techwolf.ai).
 
 ## Install
 
@@ -31,7 +31,3 @@ Or invoke directly:
 1. **Audit** -- Read-only analysis across 7 dimensions with a scored report
 2. **Re-Engineer** -- Full audit followed by active fixes in 7 phases
 3. **Bootstrap** -- Interactive new project setup with discovery questions
-
-## Author
-
-Jeroen Van Hautte ([TechWolf](https://techwolf.ai))
