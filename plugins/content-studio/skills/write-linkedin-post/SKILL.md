@@ -58,6 +58,24 @@ The goal is a consistent voice with varied execution. Each post should feel fres
 3. Always check word count against target
 4. Save to content/posts/ with type: linkedin-post, stage: 02-drafts
 
+## Validation
+
+After saving the draft, run the word count checker:
+```bash
+scripts/check-word-count.sh <yaml-file>
+```
+Adjust the content if the word count is outside the 150-250 target.
+
+## Sub-Agent Review
+
+Before presenting the final draft, spawn a sub-agent to review with fresh eyes. The reviewer should:
+- Check voice consistency against `guidelines/linkedin.md`
+- Verify the hook works in the first 210 characters
+- Flag any overlap with recently published posts
+- Check for hype words or generic phrasing
+
+Incorporate the reviewer's feedback before finalizing.
+
 ## Creating New Files
 
 Get timestamp first:

@@ -40,9 +40,27 @@ The goal is a consistent voice with varied execution. Each piece should feel fre
 ## Process
 
 1. Develop the angle and core argument
-2. Write in Dutch following the style guide
+2. Write in the language specified in the style guide
 3. Check character count against ~3500 target with `wc -m`
 4. Save to content/posts/ with type: opinion, stage: 02-drafts
+
+## Validation
+
+After saving the draft, run the character count checker:
+```bash
+scripts/check-char-count.sh <yaml-file>
+```
+Adjust the content if the character count is outside the 3000-4000 range.
+
+## Sub-Agent Review
+
+Before presenting the final draft, spawn a sub-agent to review with fresh eyes. The reviewer should:
+- Check voice consistency against `guidelines/opinion.md`
+- Verify the opening is concrete (time, place, action) not abstract
+- Flag any overlap with published opinion pieces
+- Check for weak verbs, overly long paragraphs, or generic phrasing
+
+Incorporate the reviewer's feedback before finalizing.
 
 ## Creating New Files
 

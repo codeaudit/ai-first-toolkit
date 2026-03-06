@@ -74,6 +74,24 @@ Blog posts often expand on ideas first introduced in LinkedIn posts. When this h
 3. Always check word count against 800-1200 target
 4. Save to content/posts/blog-post/ with type: blog-post, stage: 02-drafts
 
+## Validation
+
+After saving the draft, run the word count checker:
+```bash
+scripts/check-word-count.sh <yaml-file>
+```
+Adjust the content if the word count is outside the 800-1200 target.
+
+## Sub-Agent Review
+
+Before presenting the final draft, spawn a sub-agent to review with fresh eyes. The reviewer should:
+- Check voice consistency against `guidelines/linkedin.md` (same voice applies)
+- Verify each section earns its place and adds depth beyond a LinkedIn post
+- Flag any overlap with published posts (LinkedIn or blog)
+- Check for hype words, generic phrasing, or sections that could be cut
+
+Incorporate the reviewer's feedback before finalizing.
+
 ## Creating New Files
 
 Get timestamp first:
