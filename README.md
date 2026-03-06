@@ -8,6 +8,7 @@ This repository is a **plugin marketplace** for [Claude Code](https://docs.anthr
 
 | Plugin | Description | Status |
 |--------|-------------|--------|
+| [ai-firstify](plugins/ai-firstify/) | AI-first project auditor and re-engineer based on the 9 design principles and 7 design patterns from the TechWolf AI-First Bootcamp | Available |
 | [content-studio](plugins/content-studio/) | Content studio for thought leadership (LinkedIn, blog, opinion) with visual editor and Claude Code skills | Available |
 
 ## Installation
@@ -17,32 +18,17 @@ This repository is a **plugin marketplace** for [Claude Code](https://docs.anthr
 Add the marketplace and install any plugin:
 
 ```bash
-# Add the TechWolf marketplace
-/plugin marketplace add techwolf-ai/ai-first-toolkit
+# Add the TechWolf marketplace (once)
+claude plugin marketplace add techwolf-ai/ai-first-toolkit
 
 # Install a specific plugin
-/plugin install <plugin-name>@techwolf-ai-first
+claude plugin install ai-firstify@techwolf-ai-first
+claude plugin install content-studio@techwolf-ai-first
 ```
 
 ### Cursor / Windsurf / Other MCP Clients
 
-Our plugins include MCP servers that work with any MCP-compatible client.
-
-1. Open your IDE settings and find the MCP server configuration
-2. Add a new server with the appropriate `npx` command:
-
-```json
-{
-  "mcpServers": {
-    "techwolf-example": {
-      "command": "npx",
-      "args": ["-y", "@techwolf/<server-name>"]
-    }
-  }
-}
-```
-
-Refer to each plugin's README for the exact server name and configuration.
+Coming soon -- MCP server versions of our plugins for use with any MCP-compatible client.
 
 ## Contributing
 
